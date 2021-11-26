@@ -12,7 +12,7 @@ namespace New_Age_Calc
         public static float grade1;
         public static float grade2;
         public static float grade3;
-        public static float average = (grade1 + grade2 + grade3) / 3;
+        
         static void Main(string[] args)
         {
             welcome();
@@ -37,7 +37,7 @@ namespace New_Age_Calc
             grade1 = float.Parse(Console.ReadLine());
             // Ask for second grade percentage (output and input)
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write("Enter second grade(out of 100): ");
+            Console.Write("Enter second grade (out of 100): ");
             Console.ForegroundColor = ConsoleColor.White;
             grade2 = float.Parse(Console.ReadLine());
             // Ask for third grade percentage (output and input)
@@ -65,16 +65,16 @@ namespace New_Age_Calc
             Console.WriteLine("Assignment 1 is " + grade1);
             Console.WriteLine("Assignment 2 is " + grade2);
             Console.WriteLine("Assignment 3 is " + grade3);
-            Console.WriteLine("Your Score is " + average + "%");
-            if (average < 40)
+            Console.WriteLine("Your Score is " + (grade1 + grade2 + grade3) / 3 + "%");
+            if ((grade1 + grade2 + grade3) / 3 < 40)
             {
                 Console.WriteLine("You have Failed!!!");
             }
-            else if (average < 55)
+            else if ((grade1 + grade2 + grade3) / 3 < 55)
             {
                 Console.WriteLine("You have a Pass!!!");
             }
-            else if (average < 70)
+            else if ((grade1 + grade2 + grade3) / 3 < 70)
             {
                 Console.WriteLine("You have a Merit!!!");
             }
