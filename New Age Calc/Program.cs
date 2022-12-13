@@ -8,7 +8,7 @@ namespace New_Age_Calc
 {
     internal class Program
     {
-        //declare atributes
+    
         public static float grade1;
         public static float grade2;
         public static float grade3;
@@ -102,7 +102,7 @@ namespace New_Age_Calc
             Console.WriteLine("Find more interesting projects at my GitHub Repository: bit.ly/2YDCMYQ ");
             Console.WriteLine();
             Console.WriteLine("Program Developed by Jordan W Sparkes");
-            Console.WriteLine("Program Developed using Visual Studio 2022 Proffesional Edition");
+            Console.WriteLine("Program Developed using Visual Studio 2019 Community Edition");
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Press any key to exit");
